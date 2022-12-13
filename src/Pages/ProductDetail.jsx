@@ -1,12 +1,11 @@
 import React from 'react'
 import axios from'axios'
-import {useNavigate,useParams} from 'react-router-dom'
+import {useParams} from 'react-router-dom'
 import { useState } from 'react';
 import { useEffect } from 'react';
 
 const ProductDetail = () => {
     const {id} =useParams();
-    const navigate=useNavigate();
     const [item,setItem]=useState([]);
     useEffect(()=>{
         const getItemById=async()=>{
