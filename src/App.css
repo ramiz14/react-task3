@@ -34,3 +34,22 @@ header{
   top: 15%;
   left: 19%;
 }
+.detail-img img{
+  height: 500px;
+}
+.pr-detail{
+  margin-top: 10%;
+  
+}
+.detail-img{
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+}
+.detail-text{
+  color: white;
+  font-size: 20px;
+}
+.detail-description{
+  font-size: 20px;
+  margin-bottom: 50px;
+}

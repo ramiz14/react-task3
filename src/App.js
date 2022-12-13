@@ -6,6 +6,7 @@ import ExpProducts from './Pages/ExpProducts';
 import Index from './Pages/Index';
 import axios from 'axios';
 import { useState,useEffect } from 'react';
+import ProductDetail from './Pages/ProductDetail';
 
 function App() {
   const [catogories,setCatog]=useState([])
@@ -30,6 +31,7 @@ function App() {
           <Route path='/' element={<Index Prs={prs} Catogs={catogories} />}></Route>
           <Route path='expPrs' element={<ExpProducts Prs={prs}/>}></Route>
           <Route path='about' element={<About />}></Route>
+          <Route path='/details/:id' element={<ProductDetail />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
